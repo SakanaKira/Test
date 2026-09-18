@@ -1,15 +1,29 @@
 const nama = "akana akira";
-let usia = 22;
+let usia = 10
+
+let biodata = document.getElementById('biodata');
 
 function generateBiodata() {
-    if (usia <= 30) {
-        // INI ADALAH KONDISI PERTAMA
-        console.log('anda dewasa');
-    } else {
-        // INI ADALAH JIKA KONDISI TIDAK TERPENUHI
-        console.log('anda anak-anak')
+    let generasi;
+
+    if (usia >= 10 && usia < 18) {
+        generasi = "generasi remaja";
+    } 
+    else if (usia >= 18 && usia < 30) {
+        generasi = "generasi dewasa"
+    } 
+    else if (usia >= 30) {
+        generasi = "generasi tua"
     }
-    console.log(`nama saya adalah ${nama} dan usia saya ${usia} tahun`); 
+    else if (usia >= 2 && usia <10) {
+        generasi = "generasi anak anak"
+    }
+    else {
+        generasi = "generasi bayi"
+    }
+    
+
+    return biodata.innerHTML = generasi;
 }
 
 console.log(nama);
