@@ -18,7 +18,7 @@ function generateBiodata() {
     else if (usia >= 2 && usia <10) {
         generasi = "generasi anak anak"
     }
-    else {
+    else {  
         generasi = "generasi bayi"
     }
     

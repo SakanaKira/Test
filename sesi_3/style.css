@@ -1,0 +1,20 @@
+.tanpa-bootstrap{
+        border: none;
+        padding: 20px;
+        font-weight: 800;
+        font-size: 3em;
+        background-color: tomato;
+        color: #333;
+    }
+.tanpa-bootstrap:hover {
+    background-color: aqua;
+    color: black;
+    transform: rotate(2);
+    transition: all .5s;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
